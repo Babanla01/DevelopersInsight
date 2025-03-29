@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
 
-const {data:blogs , isPending , error ,setData:setBlogs} = useFetch("http://localhost:3000/blogs")
+const {data:blogs , isPending , error ,setData:setBlogs} = useFetch("users")
 
 // const [blogs, setBlogs] = useState(null);
 // const [name,setName] = useState("Sirkay")

@@ -1,6 +1,4 @@
 // import { useState,useEffect } from "react";
-// import { db } from "./firebase";
-// import { collection, getDocs } from "firebase/firestore";
 // const useFetch = (url) => {
 //     const [data , setData] = useState(null)
 //     const [isPending , setIsPending] = useState(true)
@@ -45,6 +43,8 @@
 // }
  
 // export default useFetch;
+
+
 import { useState, useEffect } from "react";
 import { db } from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
@@ -89,7 +89,7 @@ const useFetch = (collectionName) => {
     };
   }, [collectionName]);
 
-  return { data, isPending, error, setData };
+  return { data, isPending, error,  setData };
 };
 
 export default useFetch;

@@ -1,14 +1,19 @@
 import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import useFetchDocument from "./UseFetchDocument";
+
 
 const BlogDetails = () => {
     const history = useHistory()
     const {id} = useParams();
-    const { data:blog , isPending , error} = useFetch(`http://localhost:3000/blogs/${id}`);
+    const { data:blog , isPending , error} = useFetchDocument("users",id)
+    // const { data:blogs , isPending , error} = useFetch("Blogs")
+    // const blog = blogs.find((blog) => blog.id === id)
+
     console.log(blog);
     const handleDelete = ()=>{
-        fetch(`http://localhost:3000/blogs/${id}`,{
+        fetch(`Blogs/${id}`,{
             method:"DELETE"
         }).then(() => history.push('/') )
     }
