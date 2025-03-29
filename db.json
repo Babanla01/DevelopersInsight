@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "My new Website",
+      "body": "     Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum amet, nulla reprehenderit autem iusto in sed architecto distinctio. Provident rerum eveniet quis. Natus velit quaerat debitis, ad neque necessitatibus.",
+      "author": "mario"
+    },
+    {
+      "id": "3",
+      "title": "Welcome Party !",
+      "body": "     Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum amet, nulla reprehenderit autem iusto in sed architecto distinctio. Provident rerum eveniet quis. Natus velit quaerat debitis, ad neque necessitatibus.",
+      "author": "yoshi"
+    },
+    {
+      "id": "2",
+      "title": "Welcome Party !",
+      "body": "     Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum amet, nulla reprehenderit autem iusto in sed architecto distinctio. Provident rerum eveniet quis. Natus velit quaerat debitis, ad neque necessitatibus.",
+      "author": "yoshi"
+    },
+    {
+      "id": "ee96",
+      "title": "Hassan Designer",
+      "body": "sdrftgyuhijokhugyftservbnjkml,d5f6guhijokiu",
+      "author": "Hassan"
+    }
+  ]
+}

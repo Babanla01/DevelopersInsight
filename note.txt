@@ -1,0 +1,23 @@
+//     const [arr , setArr] = useState([1,2,3,4,5])
+//     const [programme ,setProgramme] = useState("national diploma")
+// const changeArr = () =>{
+//     setArr(arr.map(arr => arr*2))
+// }
+// const changePrg = ()=>{
+//     setProgramme("Higher Nationa Diploma")
+// }
+//     const handleClick = (e) =>{
+//         console.log("hello React" , e);
+        
+//     }
+//     const handleClickAgain = (name ,e) =>{
+//         console.log(name , e.target);
+        
+//     }
+
+    {/* <h1>{arr}</h1> */}
+    {/* <h1>{programme}</h1> */}
+    {/* <button onClick={changePrg}>ChangePrg</button> */}
+    {/* <button onClick={changeArr}>ChangeArray</button> */}
+    {/* <button onClick={handleClick}>Click me</button> */}
+    {/* <button onClick={(e)=>{handleClickAgain("Babanla",e)}}>Click me Again</button> */}
