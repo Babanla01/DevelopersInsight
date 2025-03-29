@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-
+import { db } from "./firebase";
+import { collection, addDoc } from "firebase/firestore";
 const Create = () => {
     const history = useHistory();
     const [title , setTitle] = useState('');
@@ -12,11 +13,29 @@ const Create = () => {
         const data = {title, body , author};
         console.log(data);
         
-        fetch("http://localhost:3000/blogs" , {
-            method: "POST",
-            headers:{"Content-Type":"application/json"},
-            body:JSON.stringify(data)
-        }).then(()=> history.push("/"))
+        // fetch("http://localhost:3000/blogs" , {
+        //     method: "POST",
+        //     headers:{"Content-Type":"application/json"},
+        //     body:JSON.stringify(data)
+        // }).then(()=> history.push("/"))
+        // const docRef =  addDoc(collection(db, "users"), {
+        //     name: "John Doe",
+        //     age: 25,
+        //     email: "john@example.com"
+        //   });
+        //   console.log("Document written with ID:", docRef.id);
+        // } catch (e) {
+        //   console.error("Error adding document:", e);
+        // }
+        addDoc(collection(db, "users"), data)
+            .then((docRef) => {
+              console.log("Document written with ID:", docRef.id);
+            })
+            .catch((error) => {
+              console.error("Error adding document:", error);
+            }).finally(()=>{
+                history.push("/")
+            })
     }
     return (  
         <div className="create">
